@@ -36,4 +36,4 @@ async def on_message(message):
         await message.channel.send("Hi") 
 
 
-bot.run("OTcxOTQ5OTE0MjA2NjU4NjYw.YnR85Q.ohYSaAOIsKfOvYsJiXoA3Ihoc18")
+bot.run("bot token goes here")
