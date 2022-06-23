@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'lato', sans-serif;
+    box-sizing: border-box;
+}
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;  
+}
+
+
+.logo {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span {
+    color: #f90
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 28px;
+}
+nav ul li a:hover {
+    color: #f90;
+    transition: .1s;
+    border-bottom: 4px #fff solid;
+}
+
+.btn {
+    background-color: #f90;
+    color: white;
+    text-decoration: none; 
+    border: 2px solid transparent;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: #fff;
+    margin: 20px 0px 20px;
+    font-size: 100px;
+}
+
+h3 {
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: rgb(96, 198, 228);
+    initial-letter: 2px;
+    font-size: 35px;
+}
+
+.newsletter form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newsletter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 100px 14px 15px;
+    border: 2px solid #f90;
+    outline: none;
+    border-radius: 30px; 
+}
+
+.newsletter form input:last-child {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f90;
+    color: #fff;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+    margin-right: 100px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width:95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-text h2{
+    color:#fff;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+   color:#fff;
+    letter-spacing: 2px;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: #f90;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+button {
+    background-color: #f90;
+    color:#fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid #f90;
+    cursor: pointer;
+}
+
+.projects {
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2{
+    color:#fff;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align:center;  
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: rgba(238, 176, 84, 0.773);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;    
+    color:rgb(0, 0, 0);
+}
+
+h5 {
+    color:#fff;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.pra p{
+    color:purple;
+    font-size: 1rem;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button {
+    background-color: rgb(1, 1, 253);
+    color:#fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 20px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.skills {
+    width: 100%;
+    height: 790px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills h1 {
+    color: rgb(255, 5, 5);
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.skills h3 {
+    color:#000;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.skills .button-two {
+    background-color: rgb(1, 1, 253);
+    color:#fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 20px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.skills .button-two:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.skills ul {
+    list-style-type: none;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+/*.container {
+    width: 100%;
+    display: flex;
+} */
+.grid {
+    display:grid;
+    grid-template-columns: repeat(3, 2fr);
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+/*CSS for button up */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2) {
+    color:rgb(0, 0, 0);
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f90;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: rgb(1, 1, 250);
+}
+
+.social a:hover {
+    transform: scale(1.5);
+    transition: .3s;
+}
